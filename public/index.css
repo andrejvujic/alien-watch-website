@@ -5,22 +5,47 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   background: rgb(47, 148, 68);
 }
 
 nav {
+  padding: 0px 24px;
   height: 72px;
   background: #000;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 nav img {
   width: 44px;
   height: 44px;
+}
+
+nav ul {
+  color: wheat;
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
+nav ul li {
+  height: 72px;
+}
+
+nav ul li a {
+  display: block;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  color: wheat;
+  text-underline-offset: 12%;
 }
 
 main {
