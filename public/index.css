@@ -85,7 +85,10 @@ footer a {
 .card .download-button {
   display: block;
   margin-top: 16px;
-  font-size: 16px;
+}
+
+.card .download-button img {
+  width: 200px;
 }
 
 .card p {
