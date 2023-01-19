@@ -57,26 +57,6 @@ main {
   gap: 24px;
 }
 
-footer {
-  position: relative;
-  bottom: 0px;
-  width: 100vw;
-  padding: 8px 16px;
-  background-color: rgb(28, 86, 39);
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-footer a {
-  color: wheat;
-  text-underline-offset: 12%;
-  display: block;
-  height: 72px;
-  display: grid;
-  place-items: center;
-}
-
 .card {
   background-color: #f0f0f0;
   border-radius: 36px;
@@ -133,4 +113,30 @@ footer a {
 
 .card p span {
   font-weight: bold;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100vw;
+  padding: 8px 16px;
+  background-color: rgb(28, 86, 39);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+footer a {
+  flex: 1;
+  color: wheat;
+  text-underline-offset: 12%;
+  display: block;
+  height: 72px;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
