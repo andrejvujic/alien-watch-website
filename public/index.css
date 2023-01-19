@@ -89,6 +89,10 @@ footer a {
   margin-top: 24px;
 }
 
+.card {
+  margin: 0px 24px;
+}
+
 .card .hint {
   font-size: 12px;
   text-transform: uppercase;
