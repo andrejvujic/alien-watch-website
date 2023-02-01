@@ -17,6 +17,7 @@
 
             const navigator = window.navigator;
             navigator.clipboard.writeText(text).then(() => {
+              e.target.blur();
               alert("Copied to clipboard!");
             });
           });
