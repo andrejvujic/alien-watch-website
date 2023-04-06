@@ -49,6 +49,21 @@ nav ul li a {
   text-underline-offset: 12%;
 }
 
+nav ul li a:has(span) {
+  text-decoration: none;
+}
+
+.nav-icon {
+  border: 1.4px solid wheat;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
 main {
   display: flex;
   flex-direction: column;
