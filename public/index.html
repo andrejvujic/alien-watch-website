@@ -4,8 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omnitrix</title>
+    <title>Alien Watch</title>
     <link rel="stylesheet" href="./index.css" />
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyBi9T5clxGpc1Q6DvOe-oGH7bYm_ih3LeA",
+        authDomain: "omnitrix-watch.firebaseapp.com",
+        projectId: "omnitrix-watch",
+        storageBucket: "omnitrix-watch.appspot.com",
+        messagingSenderId: "86294574485",
+        appId: "1:86294574485:web:8b2dfb39dd26c23d30b29c",
+        measurementId: "G-FCN4LHER24",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </head>
   <body>
     <nav>
