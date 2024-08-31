@@ -97,6 +97,14 @@ main {
   margin-left: 2px;
 }
 
+.card .hintify {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #7e807e;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
 .card h3 {
   font-size: 30px;
 }
@@ -169,4 +177,8 @@ footer a {
 
 .hidden {
   display: none;
+}
+
+span.highlight {
+  color: #1a9116;
 }
