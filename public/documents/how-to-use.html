@@ -22,10 +22,18 @@
       tr:nth-child(odd) {
         background-color: #dadada;
       }
+      code {
+        background: #dedede;
+        padding: 2px 8px;
+        letter-spacing: -2px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        border-radius: 16px;
+      }
     </style>
   </head>
   <body>
-    <p>Last updated on February 6, 2025.</p>
+    <p>Last updated on February 25, 2025.</p>
     <p>
       <a
         href="https://play.google.com/store/apps/details?id=com.andrej.simulator"
@@ -44,6 +52,7 @@
         <ul>
           <li><a href="#voice-commands">Voice Commands</a></li>
           <li><a href="#color-customization">Color Customization</a></li>
+          <li><a href="#design-customization">Design Customization</a></li>
           <li><a href="#albedo">Albedo</a></li>
           <li><a href="#screensaver">Screensaver</a></li>
           <li><a href="#preferences-editor">Preferences Editor</a></li>
@@ -61,28 +70,92 @@
         The default transformation and cooldown durations are 30 seconds, but
         can be customized using the Alien Watch Companion app for Android or
         using the <a href="#preferences-editor">Preferences Editor</a> on your
-        Wear OS device. <br /><br />Prototype mode contains two other sub-modes:
+        Wear OS device. <br /><br />
+
+        Prototype mode contains:
       </p>
       <ul>
         <li>Master Control</li>
+        <li>DNA Scan</li>
         <li>Self Destruction</li>
-        <li>Virtual Reality transformations</li>
+        <li>Fusion Transformations</li>
+        <li>Virtual Reality Transformations</li>
+        <li>Malfunctioned Transformations</li>
+        <li>Other features</li>
       </ul>
       <h3>Prototype Master Control</h3>
       <p>
-        Activation sequence: L, R, L, R, L, R, L, R, L, R.
+        Activation sequence: <code>L, R, L, R, L, R, L, R, L, R</code>
         <br />
         <br />
-        In Master Control mode you gain access to a total of 55 aliens.<br /><br />
+        In Master Control mode you gain access to a total of 55 aliens (after
+        you unlock them using DNA Scan).<br /><br />
         The transformations are infinite, meaning that you can stay transformed
         how long you want! Cooldowns don't require you wait before being able to
         transform again, meaning that you can exit cooldown whenever you like.
         <br /><br />There's also a quick transformation feature which you can
         use by long pressing the screen when your Omnitrix is locked.
       </p>
+      <h3>Prototype DNA Scan</h3>
+      <p style="color: red">
+        DNA Scan requires Master Control and you need to allow Alien Watch to
+        have the Activity Recognition permission on your Wear OS device!
+      </p>
+      <p>
+        Initially you only have access to 10 aliens without Master Control and
+        15 aliens with Master Control. In order to unlock more aliens (currently
+        there's a totoal of 55 aliens) you will need to use DNA Scan.
+        <br /><br />
+        There are two approaches to using DNA Scan in Prototype mode:
+      </p>
+      <ol>
+        <li>Unlocking DNA Scan (by walking and reaching steps goals)</li>
+        <li>Forcing DNA Scan (by using a cheat code)</li>
+      </ol>
+      <p>
+        If you want to complete DNA Scan (eg. unlock all aliens) without using
+        cheats you will need to walk and reach step count goals that Alien Watch
+        sets for you. After you reach the target step count you can enter the
+        code for the DNA Scan activation.
+        <br />
+        <br />
+        Step count progress check: <code>L, R, R, R, R, L, R, R, R, R</code>
+        <br /><br />
+        Attempt DNA Scan activation: <code>L, R, R, L, L, L, L, L, L, L</code>
+        <br /><span style="color: red">
+          This can only be used after reaching the target step count. It also
+          requires Master Control.
+        </span>
+        <br /><br />
+        Alien Watch tracks how much time it took you to unlock aliens. You can
+        check your time in the DNA Scan progress check screen using the above
+        mentioned activation code. After completing DNA Scan you will be able to
+        submit your result to the Leaderboard in the Alien Watch Companion app
+        for Android.
+        <br /><br />
+        If you don't want to submit your result to the Leaderboard you can use
+        the code for forcing DNA Scan activation without having to reach the
+        target step count.
+        <br /><br />
+        Force DNA Scan activation: <code>L, R, R, R, R, L, R, R, R, R</code>
+        <br />
+        <span style="color: red"
+          >If you use this code you won't be able to submit your result to the
+          Leaderboard.</span
+        >
+        <br /><br />
+        How do I submit my result to the Leaderboard?
+        <br />
+        <br />
+        After completing DNA Scan in Prototype mode open the Alien Watch
+        Companion app for Android. If you don't have an Alien Watch account you
+        will need to create it. After creating your account (or signing in)
+        navigate to the Leaderboard screen and a prompt will appear asking you
+        if you want to share your result to the Leaderboard.
+      </p>
       <h3>Prototype Self Destruction</h3>
       <p>
-        Activation sequence: L, L, R, R, L, L, R, R, L, L.
+        Activation sequence: <code>L, L, R, R, L, L, R, R, L, L</code>
         <br />
         <br />
         There are multiple phases in the Self Destruction sequence. After all of
@@ -91,7 +164,7 @@
       </p>
       <h3>Prototype Fusion transformations</h3>
       <p>
-        Activation sequence: L, R, L, R, R, L, R, L, R, R
+        Activation sequence: <code>L, R, L, R, R, L, R, L, R, R</code>
         <br />
         <br />
         After using the activation code you will first go through the activation
@@ -111,7 +184,6 @@
         (Diamondhead + Grey matter) and Stink arms (Stinkfly + Four arms).
       </p>
       <h3>Virtual Reality transformations</h3>
-
       <p>
         <span style="color: red"
           >Not all smartphones support VR.
@@ -140,11 +212,36 @@
           >Learn more</a
         >
       </p>
+      <h3>Malfunctioned Transformations</h3>
+      <p>
+        If you double tap (instead of tapping once) to perform a transformation
+        the Omnitrix will malfunction and it won't transform you into the alien
+        you actually selected. This will trigger a special animation which will
+        reveal which alien you transformed into.
+      </p>
+      <h3>Other Features</h3>
+      <h3>Cancel Alien Selection</h3>
+      You can cancel alien selection by pressing the back button or long
+      pressing the center of the screen if your watch automatically exits the
+      app after you press the back button. This will trigger a speical animation
+      which will bring your Omnitrix back into locked state.
+      <h3>Randomize Alien Order</h3>
+      If you enable this then the order of aliens will be randomized and you
+      will get a random alien every time you switch to the right or to the left.
+      <h3>Instant Alien Switching</h3>
+      If you enable this there won't be a switching animation and you will be
+      able to cycle between aliens instantly.
+      <h3>Cosmetic Customization</h3>
+      Prototype mode supports some costmetic settings which allow you to
+      configure the look of your Prototype Omnitrix to your liking. You can
+      enable or disable shadows and realistic effects.
+      <br /><br />If realistic effects are off the background of alien selection
+      won't be animated and the black borders on the sides won't be shiny.
     </section>
     <section id="ultimatrix">
       <h1>Ultimatrix</h1>
       <p>
-        Activation sequence: L, L, L, R, L, R, L, R, L, R.
+        Activation sequence: <code>L, L, L, R, L, R, L, R, L, R</code>
         <br />
         <br />
         You can activate Ultimatrix by using it's activation sequence when in
@@ -154,15 +251,16 @@
         <br />
         <br />
         In Ultimatrix mode you have access to a total of 34 aliens. You can
-        perform ultimate transformations with 9 of those aliens, while 22 scream
+        perform ultimate transformations with 9 of those aliens, while 32 scream
         their name when performing a normal transformation.
         <br />
         <br />
         Aliens which currently scream their name when transforming: Swampfire,
-        Humungousaur, Spidermonkey, Big Chill, Jetray, Ghostfreak, Chromastone,
-        Brainstorm, Way Big, Alien X, Cannonbolt, Diamondhead, Terraspin,
-        Armodrillo, NRG, Ampfibian, Ghostfreak, Chamalien, Eatle, Fasttrack,
-        Clockwork, Juryrigg.
+        Humungousaur, Spidermonkey, Four Arms, Big Chill, Jetray, Goop, Echo
+        Echo, Ghostfreak, Chromastone, Brainstorm, Way Big, Alien X, Rath,
+        Upchuck, Cannonbolt, Diamondhead, Ripjaws, Water Hazard, Terraspin,
+        Armodrillo, NRG, Ampfibian, Zs'Skayr, Lodestar, Nanomech, Chamalien,
+        Eatle, Fasttrack, Clockwork, Juryrigg.
         <br />
         <br />
 
@@ -173,16 +271,17 @@
         <br />
         <br />
 
-        Ultimatrix mode contains three other sub-modes:
+        Ultimatrix mode contains:
       </p>
       <ul>
         <li>Master Control</li>
         <li>Self Destruction</li>
         <li>Ultimate Trasnformations (Evolved Forms)</li>
+        <li>Other features</li>
       </ul>
       <h3>Ultimatrix Master Control</h3>
       <p>
-        Activation sequence: L, R, L, R, L, R, L, R, L, R.
+        Activation sequence: <code>L, R, L, R, L, R, L, R, L, R</code>
         <br /><br />
         Master Control enables quick transformations and ultimate
         transformations. To perform quick transformations you need to long press
@@ -203,7 +302,7 @@
       </p>
       <h3>Ultimatrix Self Destruction</h3>
       <p>
-        Activation sequence: L, L, R, R, L, L, R, R, L, L.
+        Activation sequence: <code>L, L, R, R, L, L, R, R, L, L</code>
         <br />
         <br />
         There are multiple phases in the Self Destruction sequence. The complete
@@ -241,11 +340,29 @@
         Swampfire!") using the
         <a href="#preferences-editor">Preferences Editor</a>.
       </p>
+      <h3>Other features</h3>
+      <h3>Cancel Alien Selection</h3>
+      You can cancel alien selection by pressing the back button or long
+      pressing the center of the screen if your watch automatically exits the
+      app after you press the back button. This will trigger a speical animation
+      which will bring your Omnitrix back into locked state.
+      <h3>Randomize Alien Order</h3>
+      If you enable this then the order of aliens will be randomized and you
+      will get a random alien every time you switch to the right or to the left.
+      <h3>Instant Alien Switching</h3>
+      If you enable this there won't be a switching animation and you will be
+      able to cycle between aliens instantly.
+      <h3>3D Alien Switching Effect</h3>
+      If you enable this an animation will be played which will make it look
+      like the aliens are coming out of the screen. This option only applies to
+      the alien selection part of Ultimatrix mode and the app will revert back
+      to normal after you stop selecting aliens. Check it out, you might like
+      it.
     </section>
     <section id="omniverse">
       <h1>Omniverse</h1>
       <p>
-        Activation sequence: R, R, R, L, R, L, R, L, R, L.
+        Activation sequence: <code>R, R, R, L, R, L, R, L, R, L</code>
         <br />
         <br />
         You can activate Omniverse by using it's activation sequence when in
@@ -276,7 +393,7 @@
       </ul>
       <h3>Randomizer Function</h3>
       <p>
-        Activation sequence: R, L, L, L, R, R, L, L, L, R.
+        Activation sequence: <code>R, L, L, L, R, R, L, L, L, R</code>
         <br />
         <br />
         The Randomizer function can be activated when your Omnitrix is locked.
@@ -286,7 +403,7 @@
       </p>
       <h3>Life Form Lock</h3>
       <p>
-        Activation sequence: L, L, L, R, R, R, L, L, L, L.
+        Activation sequence: <code>L, L, L, R, R, R, L, L, L, L</code>
         <br />
         <br />
         Omniverse transformations only last 10 seconds. However, you can stay
@@ -350,21 +467,51 @@
           <td><i>check dna scan progress</i><br /></td>
         </tr>
         <tr>
-          <td style="position: relative">
-            Start DNA Scan
-            <span
-              style="
-                font-size: 12px;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                position: absolute;
-                top: 16px;
-              "
-              >!!!</span
-            >
+          <td>
+            <div style="position: relative">
+              DNA Scan
+              <span
+                style="
+                  font-size: 12px;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  position: absolute;
+                  bottom: 8px;
+                "
+                >!!!</span
+              >
+            </div>
+            (using step count)
           </td>
           <td>
             <i>start dna scan</i><br />
+            <i>attempt dna scan</i><br />
             <i>dna scan</i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="position: relative">
+              Force DNA Scan
+              <span
+                style="
+                  font-size: 12px;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  position: absolute;
+                  bottom: 8px;
+                "
+                >!!!</span
+              >
+            </div>
+          </td>
+          <td>
+            <i>force dna scan</i>
+          </td>
+        </tr>
+        <tr>
+          <td style="position: relative">Fusion mode</td>
+          <td>
+            <i>activate fusion mode</i><br />
+            <i>fusion</i>
           </td>
         </tr>
         <tr>
@@ -385,6 +532,13 @@
             <i>transform</i>
           </td>
         </tr>
+        <tr>
+          <td>Help Page</td>
+          <td>
+            <i>help</i><br />
+            <i>i need help</i><br />
+          </td>
+        </tr>
       </table>
       <p style="color: red">
         * – After you say the activation phrase the exact same text as shown in
@@ -403,21 +557,26 @@
       </p>
       <h3 id="color-customization">Color Customization</h3>
       <p>
-        You can change the color theme of the Ultimatrix and Omniverse modes.
-        You can choose between 12 different colors! To change colors you need to
-        have the Alien Watch Companion app for Android and go into the settings
-        screen. Available colors: dark blue, light blue, green (classic), lime,
-        orange, yellow, pink, purple, cyan, grey, brown and red (albedo).
+        All three modes (Prototype, Ultimatrix and Omniverse) support color
+        customization using the
+        <a href="#preferences-editor">Preferences Editor</a>.
+        <br />
+        <br />
+        Prototype mode and Ultimatrix mode allow you to pick any color for your
+        color theme! You can pick any color you want using a color picker.
+        Omniverse mode currently only supports the 12 predefined color themes.
       </p>
+
+      <h3 id="design-customization">Design Customization</h3>
       <p>
-        You can change the color theme of Ultimatrix and Omniverse using the
-        <a href="#preferences-editor">Preferences Editor</a> directly on your
-        watch without the need to use the Companion app for Android.
+        Prototype mode and Ultimatrix mode support design customization. You can
+        pick between two different designs using the
+        <a href="#preferences-editor">Preferences Editor</a>.
       </p>
 
       <h3 id="albedo">Albedo</h3>
       <p>
-        Activation sequence: R, R, L, R, R, L, L, R, L, L.
+        Activation sequence: <code>R, R, L, R, R, L, L, R, L, L</code>
         <br />
         <br />
         Albedo mode is a special color customization option which can't be
@@ -436,8 +595,6 @@
         Screensaver or Ambient mode is the mode that's activated after you
         perform the palm gesture eg. cover your watch screen with your palm. The
         screen will become darker and a clock will appear on the screen.
-        Depending on the mode which is currently active (Prototype, Ultimatrix
-        or Omniverse) a different background will be used.
         <br />
         <br />
         Currently there's no way to keep Alien Watch as a watch face, but this
@@ -445,7 +602,7 @@
       </p>
       <h3 id="preferences-editor">Preferences Editor</h3>
       <p>
-        Activation sequence: L, R, R, L, R, R, L, R, R, L.
+        Activation sequence: <code>L, R, R, L, R, R, L, R, R, L</code>
         <br />
         <br />
         You can activate the preferences editor in all modes. It allows you to
@@ -464,10 +621,20 @@
         button (physical back button on your Wear OS device) to be pressed in
         order for the app to be activated.
       </p>
+      <b>Keep Screen On</b>
+      <p>
+        If you enable this Alien Watch will prevent the screen from
+        automatically going into sleep because of inactivity.
+      </p>
     </section>
 
+    <h3>Help Page</h3>
+    Activation sequence: <code>L, L, L, R, R, R, L, L, L, R</code>
+
+    <br /><br /><br />
     If you have any questions or suggestions
     <a href="mailto:vujicandrej366@gmail.com">please let me know</a>!
+
     <br />
     <br />
     <a href="../index.html">Back to home</a>
